@@ -16,6 +16,7 @@ def pyversions():
     """python versions badge"""
     if os.path.exists("setup.py"):
         return shields.pypi.Pyversions(name(), longCache=True)
+    return ""
 
 
 @public.add
@@ -23,3 +24,4 @@ def v():
     """pypi project version badge"""
     if os.path.exists("setup.py"):
         return shields.pypi.V(name(), maxAge=3600)
+    return ""

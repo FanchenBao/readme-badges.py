@@ -1,12 +1,14 @@
-<!-- https://pypi.org/project/readme-generator/ -->
+<!--
+https://pypi.org/project/readme-generator/
+-->
 
 [![](https://img.shields.io/pypi/pyversions/readme-badges.svg?longCache=True)](https://pypi.org/project/readme-badges/)
 [![](https://img.shields.io/pypi/v/readme-badges.svg?maxAge=3600)](https://pypi.org/project/readme-badges/)
 [![Travis](https://api.travis-ci.org/looking-for-a-job/readme-badges.py.svg?branch=master)](https://travis-ci.org/looking-for-a-job/readme-badges.py/)
 
-#### Install
+#### Installation
 ```bash
-[sudo] pip install readme-badges
+$ [sudo] pip install readme-badges
 ```
 
 #### Functions
@@ -31,7 +33,9 @@ badges = [pyversions, pypi, npm, travis]
 ```
 
 #### Related projects
-+   [`classifiers-generator` - classifiers generator](https://pypi.org/project/classifiers-generator/)
++   [`classifiers-generator` - python classifiers generator](https://pypi.org/project/classifiers-generator/)
++   [`commands-generator` - shell commands generator](https://pypi.org/project/commands-generator/)
++   [`launchd-generator` - launchd.plist generator](https://pypi.org/project/launchd-generator/)
 +   [`readme-badges` - `README.md` badges](https://pypi.org/project/readme-badges/)
 +   [`readme-docstring` - generate README.md from python docstrings](https://pypi.org/project/readme-docstring/)
 +   [`readme-generator` - `README.md` generator](https://pypi.org/project/readme-generator/)

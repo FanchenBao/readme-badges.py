@@ -18,7 +18,9 @@ class Language(shields.Badge):
 @public.add
 def language(text):
     """language badge"""
-    return str(Language(status=text))
+    if text:
+        return str(Language(status=text))
+    return ""
 
 
 class Travis(badge.Badge):

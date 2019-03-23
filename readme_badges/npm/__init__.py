@@ -15,3 +15,4 @@ def v():
     """npm package version badge"""
     if os.path.exists("package.json"):
         return shields.npm.V(name(), maxAge=3600)
+    return ""
