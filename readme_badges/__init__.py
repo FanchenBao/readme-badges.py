@@ -2,11 +2,10 @@
 import badge
 import os
 import public
-import readme_badges.github
+import github_name
 import readme_badges.npm
 import readme_badges.pypi
 import shields
-import github_repo
 
 
 class Language(shields.Badge):
@@ -26,7 +25,7 @@ def language(text):
 class Travis(badge.Badge):
     def __init__(self, fullname=None):
         if not fullname:
-            fullname = github_repo.fullname()
+            fullname = github_name.get()
             if not fullname:
                 owner = os.popen("git config user.name").read().strip()
                 repo = os.path.basename(os.getcwd())

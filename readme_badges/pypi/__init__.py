@@ -8,7 +8,7 @@ import setupcfg
 def name():
     if os.path.exists("setup.cfg"):
         return setupcfg.get("metadata", "name")
-    return os.popen("python setup.py --name").popen().strip()
+    return os.popen("python setup.py --name").read().strip()
 
 
 @public.add
